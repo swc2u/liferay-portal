@@ -1,0 +1,4 @@
+create index IX_76D122F on cscl_Appointment_Admin (appointedDate[$COLUMN_LENGTH:75$]);
+create index IX_30B1A314 on cscl_Appointment_Admin (appointee[$COLUMN_LENGTH:75$], appointedDate[$COLUMN_LENGTH:75$], FromTime[$COLUMN_LENGTH:75$], SecondTimeSlot[$COLUMN_LENGTH:75$], ThirdTimeSlot[$COLUMN_LENGTH:75$], FourthTimeSlot[$COLUMN_LENGTH:75$], FifthTimeSlot[$COLUMN_LENGTH:75$], SixthTimeSlot[$COLUMN_LENGTH:75$], SeventhTimeSlot[$COLUMN_LENGTH:75$], EighthTimeSlot[$COLUMN_LENGTH:75$]);
+create index IX_712AA2E1 on cscl_Appointment_Admin (appointeeId, appointedDate[$COLUMN_LENGTH:75$]);
+create index IX_69D5E4C5 on cscl_Appointment_Admin (uuid_[$COLUMN_LENGTH:75$]);

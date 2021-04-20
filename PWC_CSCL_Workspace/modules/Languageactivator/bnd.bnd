@@ -1,0 +1,4 @@
+Bundle-Activator: Languageactivator.LanguageactivatorActivator
+Bundle-Name: Languageactivator
+Bundle-SymbolicName: Languageactivator
+Bundle-Version: 1.0.0

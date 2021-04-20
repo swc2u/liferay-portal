@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="cscl.appointment.admin.table.model.csclAppointmentAdmin">
+		<field name="uuid" type="String" />
+		<field name="ID" type="long" />
+		<field name="appointeeId" type="long" />
+		<field name="appointee" type="String" />
+		<field name="appointedDate" type="String" />
+		<field name="FromTime" type="String" />
+		<field name="ToTime" type="String" />
+		<field name="SecondTimeSlot" type="String" />
+		<field name="ThirdTimeSlot" type="String" />
+		<field name="FourthTimeSlot" type="String" />
+		<field name="FifthTimeSlot" type="String" />
+		<field name="SixthTimeSlot" type="String" />
+		<field name="SeventhTimeSlot" type="String" />
+		<field name="EighthTimeSlot" type="String" />
+		<field name="NineTimeSlot" type="String" />
+		<field name="TenTimeSlot" type="String" />
+	</model>
+</model-hints>

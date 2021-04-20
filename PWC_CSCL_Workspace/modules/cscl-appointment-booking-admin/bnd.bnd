@@ -1,0 +1,12 @@
+Bundle-Name: cscl-appointment-booking-admin
+Bundle-SymbolicName: com.cscl.appointment.booking.admin
+Bundle-Version: 1.0.0
+Export-Package: com.cscl.appointment.booking.admin.constants
+
+Conditional-Package:org.apache.commons.beanutils.*
+Import-Package: * ;version="0";resolution:=optional
+
+
+-includeresource:\
+    lib/httpcore.jar=httpcore-*.jar,\
+    lib/httpclient.jar=httpclient-*.jar,\

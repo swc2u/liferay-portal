@@ -1,0 +1,11 @@
+Bundle-Name: cscl-appointment-admin-table-api
+Bundle-SymbolicName: cscl.appointment.admin.table.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	cscl.appointment.admin.table.exception,\
+	cscl.appointment.admin.table.model,\
+	cscl.appointment.admin.table.service,\
+	cscl.appointment.admin.table.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../cscl-appointment-admin-table-service/service.xml
+Import-Package: * ;version="0";resolution:=optional

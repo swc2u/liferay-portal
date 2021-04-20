@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="cscl.appointment.admin.table">
+	<namespace>csclAppointmentAdmin</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="csclAppointmentAdmin" remote-service="true" uuid="true" table="cscl_Appointment_Admin">
+<column name="ID" type="long" primary="true"/>
+		<!-- Other fields -->
+		<column name="appointeeId" type="long"/>
+		<column name="appointee" type="String"/>
+		<column name="appointedDate" type="String"/>
+		<column name="FromTime" type="String"/>
+		<column name="ToTime" type="String"/>
+	    <column name="SecondTimeSlot" type="String"/>
+		<column name="ThirdTimeSlot" type="String"/>
+ 		<column name="FourthTimeSlot" type="String"/>
+		<column name="FifthTimeSlot" type="String"/>
+		<column name="SixthTimeSlot" type="String"/>
+		<column name="SeventhTimeSlot" type="String"/>
+		<column name="EighthTimeSlot" type="String"/>
+		<column name="NineTimeSlot" type="String"/>
+		<column name="TenTimeSlot" type="String"/>
+  <finder return-type="Collection" name="appointeeId">
+   <finder-column name="appointeeId" />
+  </finder>
+  
+   <finder return-type="Collection" name="appointee">
+   <finder-column name="appointee" />
+  </finder>
+  
+     <finder return-type="Collection" name="appointedDate">
+   <finder-column name="appointedDate" />
+  </finder>
+  
+   <finder return-type="Collection" name="AppointeeIDAndDate">
+   <finder-column name="appointeeId" />
+   <finder-column name="appointedDate" />
+  </finder>
+  
+   <finder return-type="Collection" name="AppointeeAndDate">
+   <finder-column name="appointee" />
+   <finder-column name="appointedDate" />
+  </finder>
+  
+  <finder name="appointeeAndSlot" return-type="Collection">
+			<finder-column name="appointee" />
+			<finder-column name="appointedDate" />
+			<finder-column name="FromTime" />
+			<finder-column name="SecondTimeSlot" />
+			<finder-column name="ThirdTimeSlot" />
+			<finder-column name="FourthTimeSlot" />
+			<finder-column name="FifthTimeSlot" />
+			<finder-column name="SixthTimeSlot" />
+			<finder-column name="SeventhTimeSlot" />
+			<finder-column name="EighthTimeSlot" />
+		</finder>
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>
